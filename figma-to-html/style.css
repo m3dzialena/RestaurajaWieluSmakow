@@ -1,0 +1,514 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.witaj-log{
+  display: flex;
+}
+
+
+#zdj {
+  background-image: url(./images/tlo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Reservation Section */
+.reservation img {
+  width: 250px;
+  height: 200px;
+  margin-right: 50px;
+}
+.reservation {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.reservation-content h2 {
+  font-size: 1.4rem;
+}
+
+.reservation-content button {
+  background: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Popular Dishes Section */
+.popular-dishes {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.dish-grid {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 25px;
+}
+
+.dish {
+  text-align: center;
+  max-width: 200px;
+}
+
+.dish img {
+  width: 250px;
+  height: 192px;
+}
+
+/* Chefs Section */
+.chefs {
+  text-align: center;
+  padding: 20px;
+}
+
+.chef-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.chef img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.map img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Logowanie */
+
+.login-section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e63e00;
+}
+
+.login-help {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.login-help a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+.login-help a:hover {
+  text-decoration: underline;
+}
+/* Rejestracja */
+.register-section {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.register-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.register-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #e63e00;
+}
+
+.register-help {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.register-help a {
+  color: #ff4500;
+  text-decoration: none;
+}
+
+.register-help a:hover {
+  text-decoration: underline;
+}
+/* Menu */
+/* Menu Section */
+.menu-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.menu-category {
+  margin-bottom: 40px;
+}
+
+.menu-category h3 {
+  margin-top: 50px;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu-item {
+  text-align: center;
+  max-width: 200px;
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu-item strong {
+  font-size: 1.2rem;
+  color: #ff4500;
+}
+/* Kontakt */
+/* Contact Info Section */
+.contact-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-details {
+  flex: 1;
+  text-align: left;
+  max-width: 400px;
+}
+
+.contact-details h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.contact-details p, .contact-details a {
+  margin: 5px 0;
+  color: #555;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #ff4500;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.map {
+  flex: 1;
+  max-width: 400px;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #e63e00;
+}
+
+/* Rezerwacja */
+
+/* Reservation Form Section */
+.reservation-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.reservation-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.reservation-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.reservation-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+.reservation-form input,
+.reservation-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.reservation-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.reservation-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+  background-color: #e63e00;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja - Restauracja Wielu Smaków</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Restauracja Wielu Smaków</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="rezerwacja.html">Rezerwacja</a></li>
+                <li><a href="logowanie.html">Logowanie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section">
+            <h2>Zarejestruj się</h2>
+            <form action="register.php" method="POST" class="register-form">
+                <label for="username">Nazwa użytkownika:</label>
+                <input type="text" id="username" name="username" placeholder="Wpisz nazwę użytkownika" required>
+
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz adres e-mail" required>
+
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" placeholder="Wpisz hasło" required>
+
+                <label for="confirm-password">Potwierdź hasło:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Powtórz hasło" required>
+
+                <button type="submit" class="register-button">Zarejestruj się</button>
+            </form>
+            <p class="register-help">Masz już konto? <a href="logowanie.html">Zaloguj się tutaj</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="rezerwacja.html">Rezerwacja</a></li>
+                <li><a href="logowanie.html">Logowanie</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
